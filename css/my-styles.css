@@ -2,14 +2,22 @@
         font-family: "Outfit", sans-serif;
         font-optical-sizing: auto;
         font-style: normal;
-        color: #162838;
+        color: #ffffff;
         box-sizing: border-box;
+    }
+    body {
+      background-color: rgb(29, 66, 103);
+      background-image: linear-gradient(rgb(18, 27, 44), rgba(255,0,0,0));
+
     }
         
         header h1 {
             color: white; 
-            font-weight: bolder;
-            font-size: 50px;
+            font-size: 45px;
+            padding-top: 0px;
+            padding-left: 20px;
+            margin: 16px 0px;
+
     }
       h1 {
         font-weight: bold;
@@ -29,16 +37,18 @@
         max-width: 100%;
         height:auto;}
 
+#mylogo {
+  margin: 10px;
+  size: 40px;
+  margin-right: 10px;
 
+}
         nav li {
         display: inline;
-		padding: 0.5em;
+		  padding: 0.5em;
         color: white;}
 
-        .row-color-1 {
-            background-color:#ADEBFF;
-        }
-
+       
 
   /*nav stuff*/
 
@@ -55,6 +65,12 @@
             padding-top: 60px;
           }
           
+          .sidenavicon {
+            margin: 20px 0px;
+            color: rgb(93, 182, 225);
+            
+
+          }
           .sidenav a {
             padding: 8px 8px 8px 32px;
             text-decoration: none;
@@ -92,10 +108,38 @@
             font-style: normal;
           }
           
+          #navbar {
+            margin: 30px 5px;
+
+          }
+
+
+
 
 #date {
 font-family: "Playfair Display", serif;
 }
+
+
+/*Work homepage section*/
+
+#worksection {
+  
+  height: 700px;
+  padding: 60px;
+  margin: 150px;
+  
+}
+
+#worksection h2 {
+
+font-family: "Playfair Display", serif;
+text-align: center;
+}
+
+
+
+
 
 
 /* Image Carasoulafgsdj*/
@@ -178,12 +222,14 @@ img {vertical-align: middle;}
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #fff;
+    background-color:#b3dddf2e;
     padding: 30px;
     padding-bottom: 10px;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
     max-width: 100%;
+    width: 800px;
+    margin: auto;
 }
 
 .fcf-form-group {
@@ -210,7 +256,7 @@ img {vertical-align: middle;}
     font-weight: 400;
     line-height: 1.5;
     color: #495057;
-    background-color: #fff;
+    background-color: #b3dddf2e;
     background-clip: padding-box;
     border: 1px solid #ced4da;
     outline: none;
@@ -327,3 +373,51 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     width: 100%;
 }
 
+
+/*home page landing stuff*/
+
+#landingpageall {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f191c3d;
+    border-radius: 80px;
+    border: 4px solid #ffffff;
+    margin: 100px;
+    
+}
+
+#landingpagetext {
+  width: 500px;
+
+}
+
+
+/*star decorations*/
+
+.star1 {
+    position: absolute;
+    top: 100px;
+    right: 40px;
+    width: 400px;
+}
+
+.star2 {
+    position: absolute;
+    top: 860px;
+    left: 23px;
+    width: 400px;
+}
+
+
+/*gallery page stuff*/
+
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+.gallerysec {
+
+     margin: auto;
+    width: 1750px;
+}

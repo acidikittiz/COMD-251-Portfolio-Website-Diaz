@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Juliette's Design Porfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/my-styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
+    <script src="myjs/myscript.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="main">
+        <header class="w3-container" id="navbar">
+            <div class="w3-col l6 m6 s12 w3-black w3-row w3-round-xxlarge">
+                <span class="sidenavicon w3-center w3-col l1 m2 s3" "="" style="
+                    font-size:35px;cursor:pointer;padding-left: 25px;padding-right: 0px;" onclick="openNav()">☰</span>
+
+                <img src="assets/logoalone_blue_main.png" class="w3-col l1 m1 s2" id="mylogo">
+                <h1 class="w3-twothirds w3-left imperial-script-regular">Juliette Diaz Design Portfolio</h1>
+                <nav id="mySidenav" class="sidenav">
+
+                    <ul>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </header>
+
+        <div class="gallerysec">
+
+        <div class="w3-container" style="margin-top:80px" id="showcase">
+            <h1 class="w3-jumbo"><b>All of my Projects</b></h1>
+            <h1 class="w3-xxxlarge w3-text-red"><b>Gallery Showcase</b></h1>
+            <hr style="width:50px;border:5px solid cyan" class="w3-round">
+        </div>
+
+
+
+
+        <div class="w3-row-padding">
+            <div class="w3-half">
+                <img src="assets/Eventdesign_evite-72dpi.jpg" style="width:100%" onclick="onClick(this)"
+                    alt="Concrete meets bricks">
+                <img src="assets/Eventdesign_postermock-72dpi.jpg" style="width:100%" onclick="onClick(this)"
+                    alt="Light, white and tight scandinavian design">
+                <img src="assets/PBMagazine_Mock-72dpi.jpg" style="width:100%" onclick="onClick(this)"
+                    alt="White walls with designer chairs">
+            </div>
+
+            <div class="w3-half">
+                <img src="assets/Qr_poster_mockups-72dpi.jpg" style="width:100%" onclick="onClick(this)"
+                    alt="Windows for the atrium">
+                <img src="assets/Eventposterdesign-72dpi.jpg" style="width:100%" onclick="onClick(this)"
+                    alt="Bedroom and office in one space">
+            </div>
+        </div>
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+            <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption"></p>
+            </div>
+        </div>
+
+
+
+
+        </div>
+    </div>
+
+    <script>
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+    </script>
+
+
+</body>
+
+</html>

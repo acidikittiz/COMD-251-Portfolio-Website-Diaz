@@ -14,67 +14,87 @@
     </head>
     <body>
         <div id="main">
-            <header class="w3-container w3-2019-evening-blue"> 
-                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+            <header class="w3-container" id="navbar"> 
+              <div class="w3-col l6 m6 s12 w3-black w3-row w3-round-xxlarge">
+              <span class="sidenavicon w3-center w3-col l1 m2 s3" "="" style="font-size:35px;cursor:pointer;padding-left: 25px;padding-right: 0px;" onclick="openNav()">☰</span>
 
-                <h1 class="w3-center imperial-script-regular">Juliette Diaz - Design Portfolio</h1>
-                <nav id="mySidenav" class="sidenav">
-                    
-                    <ul>
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html">About Me</a></li>
-                        <li><a href="resume.html">Resume</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+             <img src="assets/logoalone_blue_main.png" class="w3-col l1 m1 s2" id="mylogo">
+                <h1 class="w3-twothirds w3-left imperial-script-regular">Juliette Diaz Design Portfolio</h1>
+                  <nav id="mySidenav" class="sidenav">
+                      
+                      <ul>
+                          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="gallery.html">Gallery</a></li>
+                          <li><a href="resume.html">Resume</a></li>
+                          <li><a href="contact.html">Contact</a></li>
+                      </ul>
+                  </nav>
+
+                </div>
+
             </header>
+
+
+          <!--the thing you first see when you land on my website-->
+              <section class="w3-container" id="landingpageall"  style="padding:240px 16px">
+
+                <div id="landingpagetext">
+
+                  <h1 class="w3-margin w3-jumbo">Hey there!</h1>
+                  <p class="w3-xlarge ">My name is Juliette. I am a graphic designer and here is my portfolio which contains a collection of my work!</p>
+
+                </div>
+
+                  <img src="assets/meirl.jpg" class="w3-circle" alt="picture of me" width="400px">
+
+              </section>
+
+              <div>
+                <img src="assets/starsblue.png" class="star1" alt="starright">
+              </div>
+
+              <div>
+                <img src="assets/starsblue.png" class="star2" alt="starleft">
+              </div>
+          <!--Section for the mini work showcase-->
+
+          <section id="worksection" class="w3-black w3-row w3-round-xxlarge">
             
-            <div class="w3-container">
-                <h1>Hey there!</h1>
-            </div>
+                  <h2>Selection of my works!</h2>
+           
+              <div class="slideshow-container w3-container" id="autoslides">
 
-            <section class="w3-container ">
-                <p>Hello! My name is Juliette. I am a graphic designer and here is my work!</p>
-            </section>
-    
-            <section class="w3-container">
-                <br>
-                <h3>Selected Works</h3>
-            </section>
-
-            <div class="slideshow-container w3-container" id="autoslides">
-
-                <div class="mySlides fade">
-                  <div class="numbertext">1 / 3</div>
-                  <img src="assets/Eventdesign_postermock-72dpi.jpg" style="width:100%">
-                  <div class="text">Event Design Poster</div>
-                </div>
-                
-                <div class="mySlides fade">
-                  <div class="numbertext">2 / 3</div>
-                  <img src="assets/PBMagazine_Mock-72dpi.jpg" style="width:100%">
-                  <div class="text">ParisBaugette Magazine Spread</div>
-                </div>
-                
-                <div class="mySlides fade">
-                  <div class="numbertext">3 / 3</div>
-                  <img src="assets/Qr_poster_mockups-72dpi.jpg" style="width:100%">
-                  <div class="text">Vouge QR Poster's</div>
-                </div>
-                
-                </div>
-                <br>
-                
-                <div style="text-align:center">
-                  <span class="dot"></span> 
-                  <span class="dot"></span> 
-                  <span class="dot"></span> 
-                </div>
-                
+                  <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="assets/Eventdesign_postermock-72dpi.jpg" style="width:100%">
+                    <div class="text">Event Design Poster</div>
+                  </div>
+                  
+                  <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="assets/PBMagazine_Mock-72dpi.jpg" style="width:100%">
+                    <div class="text">ParisBaugette Magazine Spread</div>
+                  </div>
+                  
+                  <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="assets/Qr_poster_mockups-72dpi.jpg" style="width:100%">
+                    <div class="text">Vouge QR Poster's</div>
+                  </div>
+                  
+                  </div>
+                  <br>
+                  
+                  <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                  </div>
+          </section>
             
+          <!-- javascript for the slideshow-->
+
                 <script>
                     let slideIndex = 0;
                     showSlides();
